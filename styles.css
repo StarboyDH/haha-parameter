@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Work Sans", sans-serif;
+  background: #ddd6f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    45deg,
+    #faaca8,
+    #ddd6f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #faaca8,
+    #ddd6f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-container {
+  max-width: 80%;
+  padding: 1em;
+  background: #efefbb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d4d3dd,
+    #efefbb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d4d3dd,
+    #efefbb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 8px;
+  box-shadow: 0 0 1em lightcoral;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: rgb(38, 38, 78);
+}
+
+.description {
+  max-width: 80%;
+  margin-block: 0.7em 1.4em;
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: rgb(102, 102, 102);
+}
+
+.laughter-types-container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.haha-type {
+  padding: 4px 0.5em;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1em;
+  color: rgb(71, 71, 71);
+  word-break: break-all;
+  border: 1px solid #dfdf21;
+  border-radius: 4px;
+}
+
+.laugh-me {
+  width: 80%;
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(38, 38, 78);
+  background-color: #faaca8;
+  border: 2px solid #faaca8;
+  border-radius: 100vmax;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.laugh-me:hover {
+  background-color: #e0def1;
+}
+
+.laugh-me:focus {
+  outline: 3px dotted #faaca8;
+}
+
+@media (min-width: 800px) {
+  .main-container {
+    max-width: 30rem;
+  }
+
+  .haha-type {
+    padding-block: 3px;
+  }
+}
